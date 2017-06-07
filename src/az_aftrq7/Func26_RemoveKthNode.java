@@ -8,6 +8,10 @@ package az_aftrq7;
 /**
  *
  * @author pranav.nandan
+ * Here we remove every 3rd element.
+ * Hints always use parent pointer, otherwise you will complicate things more.
+ * 
+ * 
  */
 public class Func26_RemoveKthNode {
     static class ll {
@@ -23,16 +27,46 @@ public class Func26_RemoveKthNode {
     
     public static void main(String[] args) {
             ll r = new ll(1);
-            for(int i = 2;i<=20;i++)
-                r.nx = new ll(i);
-            ll p = r;int c=1;int n = 3;
-            //remove all nth element
-            while(p!=null){
+            ll p=r;
+            for(int i = 2;i<=20;i++){
+                ll tmp = new ll(i);
+                p.nx = tmp;
                 p=p.nx;
-                c++;
-                if((c+1)%n==0 && p.nx!=null) p.nx = p.nx.nx;
             }
-            //
+            
+            //print the elements
+            p = r;
+            while (p!=null){
+                System.out.println(""+p.d);
+                p = p.nx;
+            }
+            
+            p = r;int c=0;int n = 3;
+            
+            //remove all nth element
+            ll pr = p;//first node is a parent of itself and second 
+            while (p!=null){
+                c++;
+               
+                if (c%3==0) {//3rd element
+                    pr.nx = p.nx;
+                }
+                pr = p;
+                p = p.nx;
+            }
+            
+            
+            
+            
+          
+            //print the elements
+            System.out.println("prnt");
+            p = r;
+            while (p!=null){
+                System.out.println(""+p.d);
+                p = p.nx;
+            }
+            
             
             
         }
