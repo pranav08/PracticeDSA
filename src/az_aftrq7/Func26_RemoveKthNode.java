@@ -54,10 +54,6 @@ public class Func26_RemoveKthNode {
                 pr = p;
                 p = p.nx;
             }
-            
-            
-            
-            
           
             //print the elements
             System.out.println("prnt");
