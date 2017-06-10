@@ -21,13 +21,13 @@ public class AZ_AftrQ7 {
         //Q21_LongestSuffixPrefix lsp = new Q21_LongestSuffixPrefix();lsp.Q21_LongestSuffixPrefix_test();
         //SubArray_SubString arss = new SubArray_SubString();
         //SubSets ss = new SubSets();
-        //BinaryDigits bd = new BinaryDigits();
+        BinaryDigits bd = new BinaryDigits();
         //bd.test();
         //Q10_KW kr = new Q10_KW();
         //Q18_MaxValueIndex_Diff qmv = new Q18_MaxValueIndex_Diff();
 //GIVE THOUGHT: //Q20_FloorInSrtArr flrSrt = new Q20_FloorInSrtArr();
         //Q30_NextLargerElement nle = new Q30_NextLargerElement();
-        Func_Q1_StackSort stacksort = new Func_Q1_StackSort();
+        //Func_Q1_StackSort stacksort = new Func_Q1_StackSort();
 
     }
     
