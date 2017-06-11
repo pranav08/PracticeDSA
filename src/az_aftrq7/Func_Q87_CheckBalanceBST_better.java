@@ -10,7 +10,7 @@ package az_aftrq7;
  * @author Pranav Nandan
  */
 public class Func_Q87_CheckBalanceBST_better {
-    //PostOrder traversal
+//PostOrder traversal
 //Left Right and Root
 static class Node{
     Node l;
@@ -33,7 +33,8 @@ static class HeightInfo{
 static HeightInfo postOrder(Node x){//HeighInfo is wrapper class we use to two piece of information in one return 
     //we create that wrapper class because intuitively we are returning two diff info i.e. 
     //height of that subtree node + WHEATHER TREE as a whole is balanced or not till that point
-    //at first it sounds as if it is one piece of info, BUT a node balanced does not gurantee 
+    //at first it sounds as if it is one piece of info, BUT a node balanced does not gurantee tree balance
+    
 HeightInfo lh = new HeightInfo(0, true);
 HeightInfo rh = new HeightInfo(0, true);
 HeightInfo h = new HeightInfo(0, true);
