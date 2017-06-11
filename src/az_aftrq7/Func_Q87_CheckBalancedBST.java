@@ -20,7 +20,7 @@ public class Func_Q87_CheckBalancedBST {
            r = isBalancedBST(root.R);//calculate height of right tree first
        if (l==r) return l+1;
        if (l-r==1 || l-r==-1) return l>r?l+1:r+1;
-    return -99;
+    return -99;// Check 
     
 }
     static class Node {
