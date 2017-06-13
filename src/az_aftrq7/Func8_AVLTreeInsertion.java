@@ -11,7 +11,7 @@ import static az_aftrq7.Func8_AVLTreeInsertion.insert;
  *
  * @author pranav.nandan
  */
-public class Func8_AVLTreeInsertion {
+public class Func8_AVLTreeInsertion {//Right now its only BST insertion
     static N root;
     static class N{int d;N l;N r;
         N(int d){ this.d = d; }

@@ -6,7 +6,7 @@ import java.io.*;
 
 class QuickSort
 {
-    static int[] array = {2,3,6,4,1,9,2};
+    static int[] array = {5,1,3,9,2,4,8,6};
     public static void main (String[] args) throws java.lang.Exception
     {
         
@@ -21,7 +21,9 @@ class QuickSort
         int x = partition(a,a[(i+j)/2],i,j );//patition array a with pivot as mid element where i and j are the boundary indexes
         quicksort(a,i,x-1);
         quicksort(a,x+1,j);
-        
+        //the idea is after partition  whatever value was in (i+j)/2 position or pivot 
+        //comes to its correct position, which is nothing but the i that returns
+        //then we simply parition the 2 halfs seperately.
     }
     
     static public int partition(int[] a, int pivot, int i, int j){

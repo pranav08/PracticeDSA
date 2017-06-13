@@ -3,7 +3,7 @@ package az_aftrq7;
 import java.util.Arrays;
 
 public class Q21_LongestSuffixPrefix {
-    String input = "babababa";
+    String input = "babasajanababa";
     
     public void Q21_LongestSuffixPrefix_test() {
         char[] a = input.toCharArray();

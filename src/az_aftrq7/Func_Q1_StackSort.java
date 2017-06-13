@@ -29,7 +29,7 @@ while(toPopCnt>0){
 	tmp = src.pop();
 	while(!src.isEmpty() && toPopCnt>0){
 		t = src.pop();
-		if (t<tmp) {aux.push(tmp); tmp = t;}
+		if (t>tmp) {aux.push(tmp); tmp = t;}
 		else aux.push(t);
 	}
 	src.push(tmp);//as it is the smallest

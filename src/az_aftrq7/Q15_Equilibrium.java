@@ -13,7 +13,10 @@ public class Q15_Equilibrium {
     int[] arr = {1, 3, 5, 2, 2,1,0, 13 };
     int l = 0;int r= arr.length-1;
     
-    public Q15_Equilibrium() {
+    public Q15_Equilibrium() {//THIS IS WRONG, A VERY GOOD METHOD IS TO FIND COMPLETE SUM, ANS STRART REDUCING LEFTMOST NUMBER EACH TIME
+        // AND COMPARING SUM ON BOTH SIDES
+        
+        //TODO: CORRECT
         System.out.println("Process");
         int lS,rS;
         lS=arr[l];

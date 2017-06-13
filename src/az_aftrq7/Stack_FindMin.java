@@ -11,7 +11,8 @@ package az_aftrq7;
  */
 
 public class Stack_FindMin {
-
+//TODO:
+    
     int top = -1;
     int[] arr = new int[100];
     int[] min = new int[arr.length + 1];

@@ -6,8 +6,8 @@ package az_aftrq7;
 public class FrontBackSplit{
 
 static class LL{
-N r;
-N t;
+N r;//head or root
+N t;//tail
 
 
 public void insrt(int v){
